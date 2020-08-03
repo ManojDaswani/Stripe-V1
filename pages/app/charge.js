@@ -11,7 +11,7 @@ export default async (req, res) => {
         const payment = await stripe.paymentIntents.create({
             amount,
             currency: "USD",
-            description: "delicious empanadas",
+            description: "cheddar cheese",
             payment_method: id,
             confirm: true
         });
